@@ -1,0 +1,25 @@
+
+body{
+    background-color: rgb(106, 110, 110);
+}
+
+header{
+
+    border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+}
+input{
+    padding : 5px;
+    margin: 5px;
+}
+.addNewItemDiv{
+    margin: 10px;
+    padding: 10px;
+}

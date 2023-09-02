@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="./index.js" defer></script>    
+    <title>Manejo de Stock</title>
+</head>
+<body class="bg-secondary">
+    <H1>Listado de Stock</H1>
+    <form class ="container" id="formAddProduct">
+        <div class="form-group row">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Titulo del Producto</span>
+                </div>
+                <input type="text" class="form-control" id="AddProduct" >
+            </div>
+            <div class="input-group mb-3" >
+                <div class="input-group-prepend">
+                  <span class="input-group-text">ID del Producto</span>
+                </div>
+                <input type="text" class="form-control" id="productID">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Stock del Producto</span>
+                </div>
+                <input type="number" class="form-control" id="productStock">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Precio del Product</span>
+                </div>
+                <input type="number" class="form-control" id="productPrice">
+            </div>
+            <div class = "btn-group">
+                <button type="button" class="btn btn-dark" id="btnAdd" onclick="showProductTable()">Mostrar Tabla</button>
+                <button type="button" class="btn btn-dark" id="btnAdd" onclick="addProductToTable()">Agregar Item</button>
+                <button type="button" class="btn btn-dark btn-outline-danger" id="btnAdd" onclick="deleteProductToTable()">Eliminar Item</button>
+            </div>
+        </div>
+        
+      </form>
+
+        <!--Tabla de Productos-->
+        <div class ="container ">
+            <table class="table table-dark table-striped-columns table-hover table-active mb-3" id="productTable">
+                <thead class="tableHead ">
+                    <tr>
+                        <th scope="col"> Descripcion </th>
+                        <th scoep="col"> ID </th>
+                        <th scope="col"> Stock</th>
+                        <th scope="col"> Precio de Compra</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+</section>  
+</body>
+</html>
